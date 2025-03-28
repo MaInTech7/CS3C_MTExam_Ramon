@@ -1,0 +1,325 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1, footer p {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  margin: 1rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+aside {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+aside img {
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+}
+
+aside img.profile-pic {
+  width: 150px; /* Adjust the size */
+  height: auto;
+  border-radius: 50%; /* Makes it circular */
+  display: block;
+  margin: 10px auto; /* Centers the image */
+  border: 3px solid #333; /* Adds a border */
+}
+
+aside h2 {
+  text-align: center;
+}
+
+aside p {
+  margin: 0.5rem 0;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 200px; /* Restrict the width of each product card */
+  margin: 0 auto; /* Center the product cards */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.product-card p {
+  margin: 0.5rem 0;
+}
+
+.product-card button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #555;
+}
+
+#cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-list li {
+  margin-bottom: 0.5rem;
+}
+
+#total-price {
+  font-weight: bold;
+}
+
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.section__pic-container {
+  flex: 1;
+  min-width: 200px;
+}
+
+.section__pic-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.about-details-container {
+  flex: 2;
+  min-width: 300px;
+}
+
+.profile-details {
+  margin-top: 1rem;
+}
+
+.profile-details h3 {
+  margin-bottom: 0.5rem;
+}
+
+.profile-details p {
+  margin: 0;
+}
+
+.pentool-icon {
+  width: 50px;
+  height: auto;
+}
+
+.contact-icon.email-icon,
+.contact-icon.phone-icon {
+  width: 40px; /* Increased size for better visibility */
+  height: 40px; /* Ensure consistent height */
+  object-fit: contain;
+}
+
+#hero {
+  position: relative; /* Allows positioning of overlay */
+  background: url('./assets/hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+  border-radius: 8px;
+  z-index: 1; /* Places the overlay below the text */
+}
+
+#hero h2, #hero p {
+  position: relative; /* Ensures text is above the overlay */
+  z-index: 2;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: vertical;
+}
+
+.skill-icon {
+  width: 40px; /* Increased size for better visibility */
+  height: 40px; /* Ensure consistent height */
+  margin-bottom: 0rem;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.skill-card {
+  text-align: center;
+  flex: 1 1 calc(20% - 1rem); /* Adjust width as needed */
+  max-width: 150px;
+}
+
+footer .social-links {
+  margin-top: 1rem;
+}
+
+footer .social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+footer .social-links a:hover {
+  color: #ccc;
+}
+
+.feature-page .facebook-link {
+  display: block;
+  margin-top: 1rem;
+  color: #3b5998; /* Facebook blue */
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.feature-page .facebook-link:hover {
+  text-decoration: underline;
+}
+
+.feature-page .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.feature-page .social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.feature-page .social-links a:hover {
+  color: #ccc;
+}

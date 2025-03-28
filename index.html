@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCO - Web Development</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+      
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="feature.html">Feature Page</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero" style="background: url('./assets/hero-bg.jpg') no-repeat center center/cover; color: white; text-align: center; padding: 4rem 2rem;">
+      <h2>Welcome to My Resume</h2>
+      <p>Discover my skills, achievements, and more.</p>
+    </section>
+    <section id="about" style="text-align: left;">
+      <h2>About Me</h2>
+      <div class="section-container" style="display: flex; align-items: flex-start; gap: 20px;">
+        <div class="section__pic-container">
+          <img src="./assets/profile.jpg" alt="Profile picture" class="about-pic" style="width: 20%; display: block;">
+          <div class="about-details-container">
+            <h3>Thelma Mae Ramon</h3>
+            <p>Ilocos Sur, Philippines</p>
+            <p>Graphic Designer and Content Creator</p>
+            <div class="details-container" style="margin-top: 10px;">
+              <img src="assets/education-icon.png" alt="Education Icon" style="width: 50px; height: auto;">
+              <p>Bachelor of Science in Computer Science<br />ISPSC - Main Campus</p>
+            </div>
+          </div>
+        </div>
+        <div class="skills-achievements-container" style="flex-grow: 1;">
+          <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <img src="./assets/html.jpg" alt="HTML Icon" class="skill-icon">
+                <p>HTML</p>
+              </div>
+              <div class="skill-card">
+                <img src="./assets/css.png" alt="CSS Icon" class="skill-icon">
+                <p>CSS</p>
+              </div>
+              <div class="skill-card">
+                <img src="./assets/js.png" alt="JavaScript Icon" class="skill-icon">
+                <p>JavaScript</p>
+              </div>
+              <div class="skill-card">
+                <img src="./assets/graphic-icon.jpg" alt="Graphic Icon" class="skill-icon">
+                <p>Graphic Design</p>
+              </div>
+              <div class="skill-card">
+                <img src="./assets/python.jpg" alt="Python Icon" class="skill-icon">
+                <p>Python</p>
+              </div>
+              <div class="skill-card">
+                <img src="./assets/prototyping.jpg" alt="Prototyping Icon" class="skill-icon">
+                <p>Prototyping</p>
+              </div>
+            </div>
+          </section>
+          <section id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+              <li>🏆 Designed a logo for School Management System using Adobe Illustrator/Photoshop</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Information</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <aside>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="contact-icon email-icon">
+          <p><a href="mailto:thelmamaeramon@gmail.com">thelmamaeramon@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/phone.jpg" alt="Phone icon" class="contact-icon phone-icon">
+          <p>+63 956 051 2876</p>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      <p>&copy; 2025 Thelma Mae Ramon. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
